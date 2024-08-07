@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>CRUD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family: Lucida Fax;
+            }
+            input,select{
+                padding: 5px 17px;
+            }
+            h1{
+                margin-top: 150px;
+            }
+            form{
+                border: 2px solid black;
+                width: 40%;
+                height: 40vh;
+                display: flex;
+                justify-content:center;
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+        <font face="Lucida Fax">
+        <h1>Add New Employee</h1>
+        <form action="AddEmployee" method="post">
+            <table cellspacing="6" cellpadding="8">
+                <tr>
+                    <td>Name : </td><td><input type="text" name="name"></td>
+                </tr>             
+                <tr>
+                    <td>Password : </td><td><input type="password" name="password"/></td>
+                </tr>
+                <tr>
+                    <td>Email : </td><td><input type="email" name="email"/></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td>
+                        <select name="country" style="width:208px">  
+                            <option>India</option>  
+                            <option>USA</option>  
+                            <option>UK</option>  
+                            <option>Other</option>  
+                        </select>  
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2"><input type="submit" value="Save Employee"/></td>
+                </tr>
+            </table>
+        </form>
+        
+        <br/>  
+        <a href="ViewServlet">view employees</a>  
+        </font>
+    </body>
+</html>
